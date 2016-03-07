@@ -6,6 +6,7 @@
 ## Supported tags and respective `Dockerfile` links
 
 - [`latest` (*Dockerfile*)](https://github.com/eea/eea.docker.jslint4java/blob/master/Dockerfile)
+- [`1.4.4` (*Dockerfile*)](https://github.com/eea/eea.docker.jslint4java/blob/1.4.4/Dockerfile)
 
 ## Usage
 
