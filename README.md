@@ -6,16 +6,17 @@
 ## Supported tags and respective `Dockerfile` links
 
 - [`latest` (*Dockerfile*)](https://github.com/eea/eea.docker.jslint4java/blob/master/Dockerfile)
-- [`1.4.4` (*Dockerfile*)](https://github.com/eea/eea.docker.jslint4java/blob/1.4.4/Dockerfile)
+- [`1.4.4.1` (*Dockerfile*)](https://github.com/eea/eea.docker.jslint4java/blob/1.4.4.1/Dockerfile)
 
 ## Usage
 
-```console
-$ docker run --rm -v /path/to/python/code:/code eeacms/jslint4java
-```
+    $ docker run --rm -v /path/to/python/code:/code eeacms/jslint4java
+
+or
+
+    $ docker run --rm -v eeacms/jslint4java https://github.com/eea/eea.similarity.git
 
 See jslint4java `--help` for more options:
 
-```console
-$ docker run --rm eeacms/jslint4java
-```
+
+    $ docker run --rm eeacms/jslint4java
