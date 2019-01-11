@@ -14,7 +14,7 @@ fi
 
 if [ ! -z "$GIT_SRC" ]; then
   cd /code
-  git clone $GIT_SRC
+  git clone -q $GIT_SRC
   if [ ! -z "$GIT_NAME" ]; then
      if [ -z "$GIT_BRANCH" ]; then
        GIT_BRANCH="master"
@@ -22,9 +22,9 @@ if [ ! -z "$GIT_SRC" ]; then
      cd $GIT_NAME
      if [ ! -z "$GIT_CHANGE_ID" ]; then
         GIT_BRANCH=PR-${GIT_CHANGE_ID}
-        git fetch origin pull/$GIT_CHANGE_ID/head:$GIT_BRANCH
+        git fetch -q origin pull/$GIT_CHANGE_ID/head:$GIT_BRANCH
      fi
-     git checkout $GIT_BRANCH
+     git checkout -q $GIT_BRANCH
      cd /code
   fi
 fi
